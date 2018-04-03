@@ -1,0 +1,5 @@
+#!/bin/sh
+BTC="$(curl -sSL https://coinbase.com/api/v1/prices/historical | head -n 1 | sed "s|^.*,|$|" | sed "s|\(\.[0-9]$\)|\10|")"
+BCH="$(curl -sSL https://api.coinmarketcap.com/v1/ticker/bitcoin-cash/ | head -n 7 | sed '$!d' | sed 's/[^.0-9]*//g')"
+XRP="$(curl -sSL https://api.coinmarketcap.com/v1/ticker/ripple/ | head -n 7 | sed '$!d' | sed 's/[^.0-9]*//g')"
+echo "BTC:${BTC} | BCH:$"$BCH" | XRP:$"$XRP""
