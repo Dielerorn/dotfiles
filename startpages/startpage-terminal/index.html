@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startpage</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="NPL1270018">
+    <meta name="description" content="">
+
+    <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+    <link type="text/css" rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header"><span id="header-time"></span></div>
+        <script type="text/javascript">
+            var dt = new Date();
+            minute = "" + dt.getMinutes(); if (minute.length == 1) { minute = "0" + minute; }
+            second = "" + dt.getSeconds(); if (second.length == 1) { second = "0" + second; }
+            var time = dt.getHours() + ":" + minute + ":" + second;
+
+            $("#header-time").text(time);
+
+            setInterval(function(){
+                dt = new Date();
+                minute = "" + dt.getMinutes(); if (minute.length == 1) { minute = "0" + minute; }
+                second = "" + dt.getSeconds(); if (second.length == 1) { second = "0" + second; }
+                time = dt.getHours() + ":" + minute + ":" + second;
+                console.log(time);
+                $("#header-time").text(time);
+
+            },1000);
+        </script>
+        <div class="search-row">
+            <input id="search-field" type="text" name="search-field" placeholder="Search in duckduckgo [!g / !w / !yt]" onkeypress="return search(event)" autofocus="true"/>
+            <script type="text/javascript">
+            function search(e) {
+                if (e.keyCode == 13) {
+                    var val = $("#search-field").val();
+                    window.location = "https://duckduckgo.com/?q=" + val + "&kp=1&kl=de-de&kh=1&kg=p&k5=1&kae=d&k1=-1";
+                    return false;
+                }
+            }
+            </script>
+        </div>
+        <div class="terminal-con">
+            <div class="terminal-row ext-top">
+                <div class="terminal-label"><span class="hl-gray">---------------------------------------------------</span></div>
+            </div>
+            <div class="terminal-row">
+                <div class="terminal-label i1"><span class="hl-gray">Last login: </span></div>
+                <div id="time"></div>
+                <script type="text/javascript">
+                    var dt = new Date();
+                    var time = dt.getDate() + "." + dt.getMonth() + "." + dt.getFullYear() + " " + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+
+                    $("#time").text(time);
+
+                    setInterval(function(){
+                        dt = new Date();
+                        time = dt.getDate() + "." + dt.getMonth() + "." + dt.getFullYear() + " " + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+                        console.log(time);
+                        $("#time").text(time);
+
+                    },1000);
+                </script>
+            </div>
+            <div class="terminal-row">
+                <div class="terminal-label i1"><span class="hl-gray">Welcome to your <span class="hl-blue">Start Page</span>.</span></div>
+            </div>
+            <div class="terminal-row">
+                <div class="terminal-label"><span class="hl-gray">---------------------------------------------------</span></div>
+            </div>
+            <div class="terminal-row">
+                <div class="terminal-label"><span><span class="hl-blue">austin@AustinPC</span><span class="hl-orange">|$|</span><span class="hl-green">/usr/local/bin|</span><span class="hl-gray">./showfavpages.sh</span></span></div>
+            </div>
+            <div class="terminal-innerCon">
+                <div class="favCon">
+                    <div class="favCon-header">
+                        <span>Social</span>
+                    </div>
+                    <div class="favCon-body">
+                        <a href="https://sso.secureserver.net/?app=email&realm=pass&domain=email.godaddy.com" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>Email</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>YouTube</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.twitch.tv/" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>Twitch</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.reddit.com" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>Reddit</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.reddit.com/r/unixporn" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>/r/Unixporn</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="favCon">
+                    <div class="favCon-header">
+                        <span>Work</span>
+                    </div>
+                    <div class="favCon-body">
+                        <a href="https://www.invictuslimited.org/" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>Invictus</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.chase.com/" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>Bank</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://drive.google.com/drive/u/0/my-drive" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>Drive</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://online.seranking.com/admin.site.list.html" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>SE Ranking</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.reddit.com/r/Web_Development/" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>/r/Web_Development</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="favCon">
+                    <div class="favCon-header">
+                        <span>Programming/Learning</span>
+                    </div>
+                    <div class="favCon-body">
+                        <a href="https://www.codecademy.com/learn" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>Codecademy</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://stackskills.com/" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>Stack Skills</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.udemy.com/" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>Udemy</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.skillshare.com/home" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>Skill Share</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://github.com/" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>GitHub</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
