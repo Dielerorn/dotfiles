@@ -52,5 +52,9 @@
 <p>For setting the mouse sensitivity in i3/Xorg, follow <a href="https://wiki.archlinux.org/index.php/Mouse_acceleration#Disabling_mouse_acceleration">this link</a> and create the file under "with libinput"
 <br>
 <br>
+ 
+<!-- OUTDATED PICTURE
 <h2 align="center">My current rice:</h2>
 <img alt="Antergos i3 Desktop" src="https://i.imgur.com/ZaHTE8V.png"/>
+-->
+
