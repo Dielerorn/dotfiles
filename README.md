@@ -21,7 +21,7 @@
 </ul>
 <p>Color Scheme:</p>
 <ul>
-  <a href="https://github.com/NorthernTwig/Magoon/tree/master/terminal"><li>Magoon Colors</li></a>
+  <li><a href="https://github.com/NorthernTwig/Magoon/tree/master/terminal">Magoon Colors</a>or Tomorrow Dark</li>
            <li>Background Color of: #202427 (Lighter) or #1e1f21 (Darker)</li>
 </ul>
 <p>Polybar Modules:</p>
