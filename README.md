@@ -47,6 +47,7 @@
   <li>Use Oomox to theme Spotify</li>
   <li>Use LXAppearance for GTK Themes</li>
   <li>Dunst for Notifications</li>
+  <li>Use PavuControl for Audio Config</li>
 </ul>
 <p>For setting the mouse sensitivity in i3/Xorg, follow <a href="https://wiki.archlinux.org/index.php/Mouse_acceleration#Disabling_mouse_acceleration">this link</a> and create the file under "with libinput"
 <br>
