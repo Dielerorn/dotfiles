@@ -8,8 +8,6 @@
           ▀▀▀ ▀▀    ▀▀▀▀       ▀▀▀▀     ▀▀      ▀▀▀▀▀▀▀▀     ▀▀▀▀     ▀▀▀▀▀    ▀▀▀▀▀▀
 ```
 
-
-<h1 align="center">Linux Config</h1>
 <p align="center">My config files for Linux. Consists of Antergos, i3-gaps, Polybar, Rofi, and custom HTML Start Pages. These are mostly notes for myself, but feel free to copy my setup!</p>
 <br>
 <br>
