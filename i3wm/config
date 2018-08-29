@@ -30,7 +30,7 @@ font pango:System San Francisco Display 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec ./hyper-1.4.8-x86_64.AppImage
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -171,8 +171,8 @@ set $inactive-bg-color   #232f39
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
-set $focused-border-color #2C9A81
-set $unfocused-border-color #232f39
+set $focused-border-color #FFFFFF
+set $unfocused-border-color #b3b3b3
 set $indicator-color #5fabd9
 
 # window colors
@@ -222,7 +222,8 @@ bindsym Print exec scrot
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 #Set Wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/mountains_peaks_snow_115775_3872x2592.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/33sfmcp68uh11.jpg
+
 
 
 #Start authentication package for letting you use sudo
@@ -239,3 +240,6 @@ exec /home/austin/MonitorLayout.sh
 
 #Make Nautilus always start floating
 for_window [class="Nautilus"] floating enable
+
+#Start XScreensaver
+exec --no-startup-id xscreensaver -no-splash
