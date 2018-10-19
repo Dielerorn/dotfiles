@@ -76,18 +76,20 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set number
+
 
 set guifont=cherryRegular:h12
 let g:NERDTreeWinPos = "left"
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set go-=L " Removes left hand scroll bar
-set background=dark
+highlight Normal ctermfg=grey ctermbg=black
 autocmd User Rails let b:surround_{char2nr('-')} = "<% \r %>" " displays <% %> correctly
 set cpoptions+=$ " puts a $ marker for the end of words/lines in cw/c$ commands
 set laststatus=2
 
-colorscheme agila
+colorscheme onedark
 hi vertsplit ctermfg=238 ctermbg=235
 hi LineNr ctermfg=237
 hi Search ctermbg=58 ctermfg=15
